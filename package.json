@@ -1,0 +1,35 @@
+{
+  "name": "test-task",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "load_test": "node src/infrastructure/scripts/load-test.js",
+    "migrate:up": "node --experimental-specifier-resolution=node src/infrastructure/scripts/migrate.js up",
+    "migrate:down": "node --experimental-specifier-resolution=node src/infrastructure/scripts/migrate.js down",
+    "seed": "node src/infrastructure/scripts/seed.js",
+    "seed:users": "node src/infrastructure/scripts/seed.js users",
+    "seed:cron": "node src/infrastructure/scripts/seed.js cron"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.0",
+    "node-cron": "^4.1.0",
+    "pg": "^8.16.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.7",
+    "sequelize-cli": "^6.6.3",
+    "umzug": "^3.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
