@@ -2,10 +2,11 @@
 npm install
 
 Запуск миграций:
-npm run migrate
+npm run migrate:up
 
 Запуск сидов:
 npm run seed
+
 Можно также выборочно (npm run seed:users, npm run seed:cron)
 
 Запуск сервера:
